@@ -1,0 +1,10 @@
+{"compile":[
+["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/hi.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/hi.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/hi.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.c"]
+],
+"link":[
+"/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/hi.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.o"
+],
+"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/hi  /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/hi.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.o    -ldl"
+}

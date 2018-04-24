@@ -1,9 +1,0 @@
-{"compile":[
-]
-],
-"link":[
-"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/const_example.o",
-"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o"
-],
-"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/bin/const_example  /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/const_example.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o    -ldl"
-}

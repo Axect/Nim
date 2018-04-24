@@ -1,9 +1,0 @@
-{"compile":[
-["/home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/proc_style.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/proc_style.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/proc_style.c"]
-],
-"link":[
-"/home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/proc_style.o",
-"/home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/stdlib_system.o"
-],
-"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/bin/proc_style  /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/proc_style.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/stdlib_system.o    -ldl"
-}

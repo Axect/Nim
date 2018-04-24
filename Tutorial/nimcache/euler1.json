@@ -1,6 +1,7 @@
 {"compile":[
-["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c"],
-["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_math.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_math.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_math.c"]
+["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c", "gcc -c  -w -O3 -fno-strict-aliasing  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.c", "gcc -c  -w -O3 -fno-strict-aliasing  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_math.c", "gcc -c  -w -O3 -fno-strict-aliasing  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_math.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_math.c"]
 ],
 "link":[
 "/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.o",

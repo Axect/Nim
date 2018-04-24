@@ -3,7 +3,7 @@
 /* The generated code is subject to the original license. */
 /* Compiled for: Linux, amd64, gcc */
 /* Command for C compiler:
-   gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c */
+   gcc -c  -w -O3 -fno-strict-aliasing  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c */
 #define NIM_NEW_MANGLING_RULES
 #define NIM_INTBITS 64
 
@@ -32,57 +32,49 @@ struct NimStringDesc {
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
 typedef NimStringDesc* tyArray_nHXaesL0DJZHyVS07ARPRA[1];
-static N_INLINE(NI, modInt)(NI a, NI b);
-N_NOINLINE(void, raiseDivByZero)(void);
-static N_INLINE(NI, addInt)(NI a, NI b);
-N_NOINLINE(void, raiseOverflow)(void);
+N_LIB_PRIVATE N_NIMCALL(NI, problem1_9c0fBawVXPX4WFKfycT7LCA)(void);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
 N_NIMCALL(void, echoBinSafe)(NimStringDesc** args, NI argsLen_0);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_NOINLINE(void, setStackBottom)(void* theStackBottom);
-static N_INLINE(void, nimFrame)(TFrame* s);
-N_LIB_PRIVATE N_NOINLINE(void, stackOverflow_II46IjNZztN9bmbxUD8dt8g)(void);
-static N_INLINE(void, popFrame)(void);
 NIM_EXTERNC N_NOINLINE(void, systemInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, systemDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_mathInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_mathDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void);
 NIM_EXTERNC N_NOINLINE(void, euler1DatInit000)(void);
-NI s_ILQbz9a9c8df5t9c7upnbwNMw;
-NI i_CZBzNLkKVNujiLG1iZhPvw;
-extern TFrame* framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 
-static N_INLINE(NI, modInt)(NI a, NI b) {
+N_LIB_PRIVATE N_NIMCALL(NI, problem1_9c0fBawVXPX4WFKfycT7LCA)(void) {
 	NI result;
+	NI s;
 {	result = (NI)0;
+	s = ((NI) 0);
 	{
-		if (!(b == ((NI) 0))) goto LA3_;
-		raiseDivByZero();
+		NI i;
+		NI res;
+		i = (NI)0;
+		res = ((NI) 0);
+		{
+			while (1) {
+				if (!(res <= ((NI) 999))) goto LA3;
+				i = res;
+				{
+					NIM_BOOL T6_;
+					T6_ = (NIM_BOOL)0;
+					T6_ = ((NI)(i % ((NI) 3)) == ((NI) 0));
+					if (T6_) goto LA7_;
+					T6_ = ((NI)(i % ((NI) 5)) == ((NI) 0));
+					LA7_: ;
+					if (!T6_) goto LA8_;
+					s += i;
+				}
+				LA8_: ;
+				res += ((NI) 1);
+			} LA3: ;
+		}
 	}
-	LA3_: ;
-	result = (NI)(a % b);
+	result = s;
 	goto BeforeRet_;
-	}BeforeRet_: ;
-	return result;
-}
-
-static N_INLINE(NI, addInt)(NI a, NI b) {
-	NI result;
-{	result = (NI)0;
-	result = (NI)((NU64)(a) + (NU64)(b));
-	{
-		NIM_BOOL T3_;
-		T3_ = (NIM_BOOL)0;
-		T3_ = (((NI) 0) <= (NI)(result ^ a));
-		if (T3_) goto LA4_;
-		T3_ = (((NI) 0) <= (NI)(result ^ b));
-		LA4_: ;
-		if (!T3_) goto LA5_;
-		goto BeforeRet_;
-	}
-	LA5_: ;
-	raiseOverflow();
 	}BeforeRet_: ;
 	return result;
 }
@@ -128,79 +120,14 @@ int main(int argc, char** args, char** env) {
 	return nim_program_result;
 }
 
-
-static N_INLINE(void, nimFrame)(TFrame* s) {
-	NI T1_;
-	T1_ = (NI)0;
-	{
-		if (!(framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw == NIM_NIL)) goto LA4_;
-		T1_ = ((NI) 0);
-	}
-	goto LA2_;
-	LA4_: ;
-	{
-		T1_ = ((NI) ((NI16)((*framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw).calldepth + ((NI16) 1))));
-	}
-	LA2_: ;
-	(*s).calldepth = ((NI16) (T1_));
-	(*s).prev = framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
-	framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw = s;
-	{
-		if (!((*s).calldepth == ((NI16) 2000))) goto LA9_;
-		stackOverflow_II46IjNZztN9bmbxUD8dt8g();
-	}
-	LA9_: ;
-}
-
-static N_INLINE(void, popFrame)(void) {
-	framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw).prev;
-}
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
-	tyArray_nHXaesL0DJZHyVS07ARPRA T10_;
-	nimfr_("euler1", "euler1.nim");
-	nimln_(3, "euler1.nim");
-	s_ILQbz9a9c8df5t9c7upnbwNMw = ((NI) 0);
-	{
-		NI res;
-		nimln_(2045, "system.nim");
-		res = ((NI) 0);
-		{
-			nimln_(2046, "system.nim");
-			while (1) {
-				NI TM_ihhMKnF31l5XQViOmFkrHg_5;
-				if (!(res <= ((NI) 999))) goto LA3;
-				nimln_(2047, "system.nim");
-				i_CZBzNLkKVNujiLG1iZhPvw = res;
-				nimln_(5, "euler1.nim");
-				{
-					NIM_BOOL T6_;
-					NI TM_ihhMKnF31l5XQViOmFkrHg_2;
-					NI TM_ihhMKnF31l5XQViOmFkrHg_3;
-					NI TM_ihhMKnF31l5XQViOmFkrHg_4;
-					T6_ = (NIM_BOOL)0;
-					TM_ihhMKnF31l5XQViOmFkrHg_2 = modInt(i_CZBzNLkKVNujiLG1iZhPvw, ((NI) 3));
-					T6_ = ((NI)(TM_ihhMKnF31l5XQViOmFkrHg_2) == ((NI) 0));
-					if (T6_) goto LA7_;
-					TM_ihhMKnF31l5XQViOmFkrHg_3 = modInt(i_CZBzNLkKVNujiLG1iZhPvw, ((NI) 5));
-					T6_ = ((NI)(TM_ihhMKnF31l5XQViOmFkrHg_3) == ((NI) 0));
-					LA7_: ;
-					if (!T6_) goto LA8_;
-					nimln_(6, "euler1.nim");
-					TM_ihhMKnF31l5XQViOmFkrHg_4 = addInt(s_ILQbz9a9c8df5t9c7upnbwNMw, i_CZBzNLkKVNujiLG1iZhPvw);
-					s_ILQbz9a9c8df5t9c7upnbwNMw = (NI)(TM_ihhMKnF31l5XQViOmFkrHg_4);
-				}
-				LA8_: ;
-				nimln_(2048, "system.nim");
-				TM_ihhMKnF31l5XQViOmFkrHg_5 = addInt(res, ((NI) 1));
-				res = (NI)(TM_ihhMKnF31l5XQViOmFkrHg_5);
-			} LA3: ;
-		}
-	}
-	nimln_(7, "euler1.nim");
-	memset((void*)T10_, 0, sizeof(T10_));
-	T10_[0] = nimIntToStr(s_ILQbz9a9c8df5t9c7upnbwNMw);
-	echoBinSafe(T10_, 1);
-	popFrame();
+	tyArray_nHXaesL0DJZHyVS07ARPRA T1_;
+	NI T2_;
+	memset((void*)T1_, 0, sizeof(T1_));
+	T2_ = (NI)0;
+	T2_ = problem1_9c0fBawVXPX4WFKfycT7LCA();
+	T1_[0] = nimIntToStr(T2_);
+	echoBinSafe(T1_, 1);
 }
 
 NIM_EXTERNC N_NOINLINE(void, euler1DatInit000)(void) {

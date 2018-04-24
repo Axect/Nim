@@ -1,0 +1,9 @@
+{"compile":[
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/varargs.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/varargs.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/varargs.c"]
+],
+"link":[
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/varargs.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/stdlib_system.o"
+],
+"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/bin/varargs  /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/varargs.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/Chap2/nimcache/stdlib_system.o    -ldl"
+}

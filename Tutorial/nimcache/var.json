@@ -1,9 +1,0 @@
-{"compile":[
-]
-],
-"link":[
-"/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/var.o",
-"/home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.o"
-],
-"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/var  /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/var.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/stdlib_system.o    -ldl"
-}

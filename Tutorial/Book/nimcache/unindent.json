@@ -1,0 +1,18 @@
+{"compile":[
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/unindent.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/unindent.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/unindent.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_strutils.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_strutils.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_strutils.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_parseutils.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_parseutils.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_parseutils.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_math.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_math.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_math.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_algorithm.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_algorithm.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_algorithm.c"]
+],
+"link":[
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/unindent.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_strutils.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_parseutils.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_math.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_algorithm.o"
+],
+"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/bin/unindent  /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/unindent.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_strutils.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_parseutils.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_math.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_algorithm.o  -lm   -ldl"
+}

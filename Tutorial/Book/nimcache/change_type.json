@@ -1,0 +1,10 @@
+{"compile":[
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.c"],
+["/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.c", "gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.c"]
+],
+"link":[
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.o",
+"/home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o"
+],
+"linkcmd": "gcc   -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/bin/change_type  /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/stdlib_system.o    -ldl"
+}

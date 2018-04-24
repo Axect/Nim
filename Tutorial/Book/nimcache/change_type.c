@@ -3,7 +3,7 @@
 /* The generated code is subject to the original license. */
 /* Compiled for: Linux, amd64, gcc */
 /* Command for C compiler:
-   gcc -c  -w -O3 -fno-strict-aliasing  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.o /home/kavis/Documents/Programming/Nim/Tutorial/nimcache/euler1.c */
+   gcc -c  -w  -I/home/kavis/.choosenim/toolchains/nim-0.18.0/lib -o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.o /home/kavis/Documents/Programming/Nim/Tutorial/Book/nimcache/change_type.c */
 #define NIM_NEW_MANGLING_RULES
 #define NIM_INTBITS 64
 
@@ -32,61 +32,27 @@ struct NimStringDesc {
 NIM_CHAR data[SEQ_DECL_SIZE];
 };
 typedef NimStringDesc* tyArray_nHXaesL0DJZHyVS07ARPRA[1];
-N_LIB_PRIVATE N_NIMCALL(NI, problem1_9c0fBawVXPX4WFKfycT7LCA)(void);
 N_NIMCALL(NimStringDesc*, nimIntToStr)(NI x);
 N_NIMCALL(void, echoBinSafe)(NimStringDesc** args, NI argsLen_0);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_NOINLINE(void, setStackBottom)(void* theStackBottom);
+static N_INLINE(void, nimFrame)(TFrame* s);
+N_LIB_PRIVATE N_NOINLINE(void, stackOverflow_II46IjNZztN9bmbxUD8dt8g)(void);
+static N_INLINE(void, popFrame)(void);
 NIM_EXTERNC N_NOINLINE(void, systemInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, systemDatInit000)(void);
-NIM_EXTERNC N_NOINLINE(void, stdlib_mathInit000)(void);
-NIM_EXTERNC N_NOINLINE(void, stdlib_mathDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void);
-NIM_EXTERNC N_NOINLINE(void, euler1DatInit000)(void);
-
-N_LIB_PRIVATE N_NIMCALL(NI, problem1_9c0fBawVXPX4WFKfycT7LCA)(void) {
-	NI result;
-	NI s;
-{	result = (NI)0;
-	s = ((NI) 0);
-	{
-		NI i;
-		NI res;
-		i = (NI)0;
-		res = ((NI) 0);
-		{
-			while (1) {
-				if (!(res <= ((NI) 999))) goto LA3;
-				i = res;
-				{
-					NIM_BOOL T6_;
-					T6_ = (NIM_BOOL)0;
-					T6_ = ((NI)(i % ((NI) 3)) == ((NI) 0));
-					if (T6_) goto LA7_;
-					T6_ = ((NI)(i % ((NI) 5)) == ((NI) 0));
-					LA7_: ;
-					if (!T6_) goto LA8_;
-					s += i;
-				}
-				LA8_: ;
-				res += ((NI) 1);
-			} LA3: ;
-		}
-	}
-	result = s;
-	goto BeforeRet_;
-	}BeforeRet_: ;
-	return result;
-}
+NIM_EXTERNC N_NOINLINE(void, change_typeDatInit000)(void);
+NI16 a_Lo9cuf39bWsKg9ci6vPwCRBeA;
+NI8 b_z600pRcgqeJzRz0HNH9anFg;
+extern TFrame* framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 
 static N_INLINE(void, initStackBottomWith)(void* locals) {
 	setStackBottom(locals);
 }
 void PreMainInner(void) {
 	systemInit000();
-	stdlib_mathDatInit000();
-	euler1DatInit000();
-	stdlib_mathInit000();
+	change_typeDatInit000();
 }
 
 void PreMain(void) {
@@ -120,16 +86,47 @@ int main(int argc, char** args, char** env) {
 	return nim_program_result;
 }
 
-NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
-	tyArray_nHXaesL0DJZHyVS07ARPRA T1_;
-	NI T2_;
-	memset((void*)T1_, 0, sizeof(T1_));
-	T2_ = (NI)0;
-	T2_ = problem1_9c0fBawVXPX4WFKfycT7LCA();
-	T1_[0] = nimIntToStr(T2_);
-	echoBinSafe(T1_, 1);
+
+static N_INLINE(void, nimFrame)(TFrame* s) {
+	NI T1_;
+	T1_ = (NI)0;
+	{
+		if (!(framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw == NIM_NIL)) goto LA4_;
+		T1_ = ((NI) 0);
+	}
+	goto LA2_;
+	LA4_: ;
+	{
+		T1_ = ((NI) ((NI16)((*framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw).calldepth + ((NI16) 1))));
+	}
+	LA2_: ;
+	(*s).calldepth = ((NI16) (T1_));
+	(*s).prev = framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw;
+	framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw = s;
+	{
+		if (!((*s).calldepth == ((NI16) 2000))) goto LA9_;
+		stackOverflow_II46IjNZztN9bmbxUD8dt8g();
+	}
+	LA9_: ;
 }
 
-NIM_EXTERNC N_NOINLINE(void, euler1DatInit000)(void) {
+static N_INLINE(void, popFrame)(void) {
+	framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr_HRfVMH3jYeBJz6Q6X9b6Ptw).prev;
+}
+NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
+	tyArray_nHXaesL0DJZHyVS07ARPRA T1_;
+	nimfr_("change_type", "change_type.nim");
+	nimln_(1, "change_type.nim");
+	a_Lo9cuf39bWsKg9ci6vPwCRBeA = ((NI16) 42);
+	nimln_(2, "change_type.nim");
+	b_z600pRcgqeJzRz0HNH9anFg = ((NI8) 42);
+	nimln_(4, "change_type.nim");
+	memset((void*)T1_, 0, sizeof(T1_));
+	T1_[0] = nimIntToStr(((NI) (b_z600pRcgqeJzRz0HNH9anFg)));
+	echoBinSafe(T1_, 1);
+	popFrame();
+}
+
+NIM_EXTERNC N_NOINLINE(void, change_typeDatInit000)(void) {
 }
 
